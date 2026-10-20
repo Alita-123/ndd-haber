@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>NDD Yönetim Paneli</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  </head>
+  <body>
+    <script>
+      // Yapılandırma burada tutulur; panelin kendi adresi otomatik algılanır.
+      window.CMS_MANUAL_INIT = true;
+    </script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      CMS.init({
+        config: {
+          load_config_file: false,
+          backend: {
+            name: 'github',
+            repo: 'Alita-123/ndd-haber',
+            branch: 'main',
+            base_url: window.location.origin,
+            auth_endpoint: 'api/auth',
+            commit_messages: {
+              create: 'Yeni makale: {{slug}}',
+              update: 'Makale güncellendi: {{slug}}',
+              delete: 'Makale silindi: {{slug}}',
+              uploadMedia: 'Görsel eklendi: {{path}}',
+              deleteMedia: 'Görsel silindi: {{path}}',
+            },
+          },
+          locale: 'tr',
+          site_url: window.location.origin,
+          logo_url: '/logo.png',
+          show_preview_links: true,
+          slug: { encoding: 'ascii', clean_accents: true, sanitize_replacement: '-' },
+          media_folder: 'public/uploads',
+          public_folder: '/uploads',
+          collections: [
+            {
+              name: 'makaleler',
+              label: 'Makaleler',
+              label_singular: 'Makale',
+              folder: 'src/content/makaleler',
+              create: true,
+              extension: 'md',
+              format: 'frontmatter',
+              slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+              summary: '{{kategori}} · {{baslik}}',
+              sortable_fields: ['tarih', 'baslik', 'kategori'],
+              view_filters: [
+                { label: 'Taslaklar', field: 'taslak', pattern: true },
+                { label: 'Yayında', field: 'taslak', pattern: false },
+              ],
+              fields: [
+                { label: 'Başlık', name: 'baslik', widget: 'string' },
+                {
+                  label: 'Özet',
+                  name: 'ozet',
+                  widget: 'text',
+                  hint: '1-2 cümle. Ana sayfada ve arama sonuçlarında görünür.',
+                },
+                {
+                  label: 'Kategori',
+                  name: 'kategori',
+                  widget: 'select',
+                  options: ['Siyaset', 'Jeopolitik', 'Ekonomi', 'Teknoloji'],
+                },
+                {
+                  label: 'Yayın tarihi',
+                  name: 'tarih',
+                  widget: 'datetime',
+                  format: 'YYYY-MM-DD',
+                  date_format: 'DD.MM.YYYY',
+                  time_format: false,
+                  picker_utc: false,
+                },
+                { label: 'Yazar', name: 'yazar', widget: 'string', default: 'NDD Editör' },
+                {
+                  label: 'Kapak görseli',
+                  name: 'gorsel',
+                  widget: 'image',
+                  required: false,
+                  hint: 'Telif hakkı size ait veya serbest kullanımlı bir görsel seçin.',
+                },
+                { label: 'Görsel açıklaması', name: 'gorsel_alt', widget: 'string', required: false },
+                {
+                  label: 'Makale metni',
+                  name: 'body',
+                  widget: 'markdown',
+                  hint: 'Word gibi yazın: başlık, kalın, liste, bağlantı ve alıntı düğmelerini kullanabilirsiniz.',
+                },
+                {
+                  label: 'Kaynaklar',
+                  name: 'kaynaklar',
+                  widget: 'list',
+                  required: false,
+                  summary: '{{fields.yayin}} — {{fields.baslik}}',
+                  hint: 'Dayanak aldığınız yabancı basın yazıları. Her makalede en az bir kaynak olmalı.',
+                  fields: [
+                    { label: 'Yayın organı', name: 'yayin', widget: 'string', hint: 'Örn: Financial Times' },
+                    { label: 'Yazının başlığı', name: 'baslik', widget: 'string', required: false },
+                    { label: 'Bağlantı (URL)', name: 'url', widget: 'string', hint: 'https:// ile başlamalı' },
+                  ],
+                },
+                { label: 'Ana sayfada öne çıkar', name: 'one_cikan', widget: 'boolean', default: false },
+                {
+                  label: 'Taslak (yayınlama)',
+                  name: 'taslak',
+                  widget: 'boolean',
+                  default: false,
+                  hint: 'İşaretliyse kaydedilir ama sitede görünmez.',
+                },
+              ],
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>

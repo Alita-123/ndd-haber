@@ -1,0 +1,77 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { yayindakiMakaleler, formatDate, slugify } from '../../lib/util';
+
+export async function getStaticPaths() {
+  const makaleler = await yayindakiMakaleler();
+  return makaleler.map((makale) => ({ params: { slug: makale.id }, props: { makale, makaleler } }));
+}
+
+const { makale, makaleler } = Astro.props;
+const d = makale.data;
+const { Content } = await render(makale);
+const benzer = makaleler.filter((m) => m.id !== makale.id && m.data.kategori === d.kategori).slice(0, 3);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: d.baslik,
+  description: d.ozet,
+  datePublished: d.tarih.toISOString(),
+  author: { '@type': 'Person', name: d.yazar },
+  publisher: { '@type': 'Organization', name: 'Ne Dedi Ne Dedi?' },
+  image: d.gorsel ? [new URL(d.gorsel, Astro.site).toString()] : undefined,
+  citation: d.kaynaklar.map((k) => k.url),
+};
+---
+
+<Base title={d.baslik} description={d.ozet} image={d.gorsel} type="article">
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article>
+    <header class="article-head">
+      <a class="kicker" href={`/kategori/${slugify(d.kategori)}/`}>{d.kategori}</a>
+      <h1>{d.baslik}</h1>
+      <p class="lead">{d.ozet}</p>
+      <div class="byline">
+        <span><strong>{d.yazar}</strong></span>
+        <span>{formatDate(d.tarih)}</span>
+        {d.kaynaklar.length > 0 && <span>{d.kaynaklar.length} kaynak</span>}
+      </div>
+    </header>
+
+    {d.gorsel && (
+      <figure class="article-cover" style="margin-top:26px">
+        <img src={d.gorsel} alt={d.gorsel_alt ?? ''} />
+      </figure>
+    )}
+
+    <div class="prose"><Content /></div>
+
+    {d.kaynaklar.length > 0 && (
+      <aside class="sources" aria-labelledby="kaynaklar-baslik">
+        <h2 id="kaynaklar-baslik">Kaynaklar</h2>
+        <ol>
+          {d.kaynaklar.map((k) => (
+            <li>
+              <strong>{k.yayin}</strong>
+              {k.baslik && <span> — {k.baslik}</span>}
+              {' '}<a href={k.url} target="_blank" rel="noopener noreferrer">Habere git ↗</a>
+            </li>
+          ))}
+        </ol>
+      </aside>
+    )}
+    <p class="disclaimer">
+      Bu yazı, yabancı basında yer alan yayınların değerlendirmesidir; alıntılanan görüşler ilgili yayın organlarına aittir.
+    </p>
+  </article>
+
+  {benzer.length > 0 && (
+    <div class="wrap more">
+      <div class="section-head"><h2>{d.kategori} kategorisinden</h2></div>
+      <div class="grid">{benzer.map((m) => <ArticleCard makale={m} />)}</div>
+    </div>
+  )}
+</Base>

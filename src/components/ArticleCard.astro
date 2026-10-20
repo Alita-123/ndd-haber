@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { formatDate } from '../lib/util';
+
+interface Props { makale: CollectionEntry<'makaleler'>; }
+const { makale } = Astro.props;
+const d = makale.data;
+---
+
+<a class="card" href={`/makale/${makale.id}/`}>
+  <div class="card-media">
+    {d.gorsel ? <img src={d.gorsel} alt={d.gorsel_alt ?? ''} loading="lazy" /> : <div class="ph">NDD</div>}
+  </div>
+  <div class="card-body">
+    <span class="kicker">{d.kategori}</span>
+    <h3>{d.baslik}</h3>
+    <p>{d.ozet}</p>
+    <div class="meta">
+      <span>{formatDate(d.tarih)}</span>
+      {d.kaynaklar.length > 0 && <span class="dot">{d.kaynaklar.length} kaynak</span>}
+    </div>
+  </div>
+</a>

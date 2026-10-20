@@ -1,0 +1,90 @@
+---
+import '../styles/global.css';
+import { KATEGORILER } from '../content.config';
+import { slugify as slug } from '../lib/util';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  type?: 'website' | 'article';
+}
+
+const SITE_NAME = 'Ne Dedi Ne Dedi?';
+const DEFAULT_DESC =
+  "Yabancı basının Türkiye hakkındaki siyaset, jeopolitik, ekonomi ve teknoloji analizleri. Haber / Analiz / Araştırma.";
+
+const { title, description = DEFAULT_DESC, image = '/logo.png', type = 'website' } = Astro.props;
+const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} – Haber / Analiz / Araştırma`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const imageUrl = new URL(image, Astro.site);
+const path = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:locale" content="tr_TR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="brand" href="/" aria-label="Ne Dedi Ne Dedi? – Ana sayfa">
+          <img class="logo-light-bg" src="/logo.png" alt="NDD – Ne Dedi Ne Dedi? Haber / Analiz / Araştırma" width="1910" height="330" />
+          <img class="logo-dark" src="/logo-light.png" alt="" aria-hidden="true" width="1910" height="330" />
+        </a>
+        <nav class="nav" aria-label="Ana menü">
+          {KATEGORILER.map((k) => {
+            const href = `/kategori/${slug(k)}/`;
+            return <a href={href} aria-current={path.startsWith(href.slice(0, -1)) ? 'page' : undefined}>{k}</a>;
+          })}
+          <a href="/hakkinda/" aria-current={path.startsWith('/hakkinda') ? 'page' : undefined}>Hakkında</a>
+        </nav>
+      </div>
+      <div class="header-line"></div>
+    </header>
+
+    <main><slot /></main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <img src="/logo-light.png" alt="NDD – Ne Dedi Ne Dedi?" width="1910" height="330" />
+            <p>
+              Yabancı basının Türkiye hakkında ne dediğini kaynağıyla birlikte, tarafsız ve derinlemesine inceleyen bağımsız
+              haber, analiz ve araştırma platformu.
+            </p>
+          </div>
+          <nav class="footer-nav" aria-label="Alt menü">
+            {KATEGORILER.map((k) => <a href={`/kategori/${slug(k)}/`}>{k}</a>)}
+            <a href="/hakkinda/">Hakkında ve editoryal ilkeler</a>
+            <a href="/rss.xml">RSS</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">© {new Date().getFullYear()} Ne Dedi Ne Dedi? Tüm hakları saklıdır.</div>
+      </div>
+    </footer>
+  </body>
+</html>

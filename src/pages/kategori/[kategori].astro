@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { KATEGORILER } from '../../content.config';
+import { yayindakiMakaleler, slugify } from '../../lib/util';
+
+const ACIKLAMA: Record<string, string> = {
+  Siyaset: 'Yabancı basının Türkiye siyaseti hakkındaki analizleri.',
+  Jeopolitik: "Türkiye'nin bölgesel ve küresel dengelerdeki yeri üzerine dış basın yorumları.",
+  Ekonomi: "Türkiye ekonomisi, piyasalar ve politika kararları hakkında uluslararası analizler.",
+  Teknoloji: "Türkiye'nin teknoloji, savunma sanayii ve dijital dönüşümü üzerine dış basın değerlendirmeleri.",
+};
+
+export function getStaticPaths() {
+  return KATEGORILER.map((k) => ({ params: { kategori: slugify(k) }, props: { kategori: k } }));
+}
+
+const { kategori } = Astro.props;
+const makaleler = (await yayindakiMakaleler()).filter((m) => m.data.kategori === kategori);
+---
+
+<Base title={kategori} description={ACIKLAMA[kategori]}>
+  <div class="wrap">
+    <section class="hero">
+      <span class="kicker">Kategori</span>
+      <h1 class="hero-title">{kategori}</h1>
+      <p class="hero-lead">{ACIKLAMA[kategori]}</p>
+    </section>
+    {
+      makaleler.length > 0 ? (
+        <div class="grid" style="margin-top:28px">{makaleler.map((m) => <ArticleCard makale={m} />)}</div>
+      ) : (
+        <div class="empty" style="margin-top:28px"><strong>Bu kategoride henüz yazı yok.</strong>Yakında burada.</div>
+      )
+    }
+  </div>
+</Base>

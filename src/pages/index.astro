@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { yayindakiMakaleler, formatDate } from '../lib/util';
+
+const makaleler = await yayindakiMakaleler();
+const manset = makaleler.find((m) => m.data.one_cikan) ?? makaleler[0];
+const digerleri = makaleler.filter((m) => m.id !== manset?.id);
+---
+
+<Base>
+  <div class="wrap">
+    <section class="hero">
+      <span class="kicker">Haber / Analiz / Araştırma</span>
+      <h1 class="hero-title">Dünya basını Türkiye için ne dedi?</h1>
+      <p class="hero-lead">
+        Yabancı basında Türkiye hakkında çıkan siyaset, jeopolitik, ekonomi ve teknoloji analizlerini kaynağıyla birlikte,
+        tarafsız ve derinlemesine değerlendiriyoruz.
+      </p>
+    </section>
+
+    {
+      manset ? (
+        <>
+          <a class="featured" href={`/makale/${manset.id}/`}>
+            <div class="featured-media">
+              {manset.data.gorsel && <img src={manset.data.gorsel} alt={manset.data.gorsel_alt ?? ''} />}
+            </div>
+            <div class="featured-body">
+              <span class="kicker">{manset.data.kategori} · Öne çıkan</span>
+              <h2>{manset.data.baslik}</h2>
+              <p>{manset.data.ozet}</p>
+              <div class="meta">
+                <span>{formatDate(manset.data.tarih)}</span>
+                <span class="dot">{manset.data.yazar}</span>
+              </div>
+            </div>
+          </a>
+
+          {digerleri.length > 0 && (
+            <>
+              <div class="section-head"><h2>Son analizler</h2></div>
+              <div class="grid">{digerleri.map((m) => <ArticleCard makale={m} />)}</div>
+            </>
+          )}
+        </>
+      ) : (
+        <div class="empty">
+          <strong>İlk analiz yakında burada.</strong>
+          Yönetim panelinden (/admin) ilk makaleyi yayınladığınızda ana sayfa otomatik dolacak.
+        </div>
+      )
+    }
+  </div>
+</Base>
