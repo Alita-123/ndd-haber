@@ -1,69 +1,77 @@
 ---
 baslik: "On Yılda On Dosya: Türkiye Barışı Nasıl Seçenek Haline Getirdi?"
-ozet: "Suriye'den Suudi Arabistan'a, PKK'dan Ermenistan'a on dosya üzerinden bir sınav: Türkiye gücünü masadan kaldırmadan hasımlarıyla nasıl temas kurdu, hangi dosyalar kapandı, hangileri hâlâ açık?"
-tarih: 2026-10-21
+ozet: "Suriye'den Suudi Arabistan'a, PKK'dan Ermenistan'a on dosya üzerinden bir
+  sınav: Türkiye gücünü masadan kaldırmadan hasımlarıyla nasıl temas kurdu,
+  hangi dosyalar kapandı, hangileri hâlâ açık?"
 kategori: Jeopolitik
+tarih: 2026-10-21
 yazar: Ali Ömer Tortuk
+gorsel: /uploads/onyilda.jpg
+kaynaklar:
+  - yayin: Al-Quds (JISS çalışmasının Arapça çevirisi)
+    baslik: Is Israel a Regional Power? (Inbar & Assa, JISS, 31 Ağustos 2026)
+    url: https://alquds.com/ar/posts/256621-is-israel-a-regional-power
+  - yayin: Brookings Institution
+    baslik: Turkey's Search for a Middle East Order (Aslı Aydıntaşbaş, 16 Haziran 2026)
+    url: https://www.brookings.edu/articles/turkeys-search-for-a-middle-east-order/
+  - yayin: Stimson Center
+    baslik: Turkey-Israel Rivalry in the New Syria
+    url: https://stimson.org/2026/turkey-israel-rivalry-in-the-new-syria/
+  - yayin: Shafaq News
+    baslik: "Ocalan on PKK disarmament anniversary: No Turk without a Kurd"
+    url: https://shafaq.com/en/Middle-East/Ocalan-on-PKK-disarmament-anniversary-No-Turk-Without-A-Kurd
+  - yayin: Medyascope
+    baslik: PKK'nın silah yakma töreninin üzerinden bir yıl geçti (11 Temmuz 2026)
+    url: https://medyascope.tv/2026/07/11/pkknin-silah-yakma-toreninin-uzerinden-bir-yil-gecti/
+  - yayin: Diken
+    baslik: Komisyonun kabul ettiği ortak rapor yayınlandı (20 Şubat 2026)
+    url: https://www.diken.com.tr/?p=1692963
+  - yayin: NTV
+    baslik: Çerçeve yasa Resmi Gazete'de. Kurul 24 Ağustos'ta toplanıyor
+    url: https://www.ntv.com.tr/turkiye/cerceve-yasa-resmi-gazetede-kurul-24-agustosta-toplaniyor-1737825
+  - yayin: Euronews Türkçe
+    baslik: PKK'nın fesih sürecini denetleyecek kurul ilk kez toplanıyor (24 Ağustos
+      2026)
+    url: https://tr.euronews.com/2026/08/24/pkknin-fesih-surecini-denetleyecek-kurul-ilk-kez-toplaniyor
+  - yayin: İstiklal Gazetesi (Türkiye Gazetesi'ne atıfla)
+    baslik: Terörsüz Türkiye'de takvim netleşiyor (12 Ağustos 2026)
+    url: https://www.istiklal.com.tr/gundem/terorsuz-turkiyede-takvim-netlesiyor-kritik-esik-icin-tarih-verildi-1101780h
+  - yayin: Daily Sabah
+    baslik: Turkish intelligence chief meets Libya's Haftar in Benghazi
+    url: https://www.dailysabah.com/politics/diplomacy/turkish-intelligence-chief-meets-libyas-haftar-in-benghazi
+  - yayin: Defense News
+    baslik: Turkish warship's Benghazi port call cements new tack on Libya (26
+      Ağustos 2025)
+    url: https://www.defensenews.com/global/mideast-africa/2025/08/26/turkish-warships-benghazi-port-call-cements-new-tack-on-libya/
+  - yayin: Türkiye Today
+    baslik: Turkish companies to launch development projects in four Libyan cities
+      (15 Nisan 2025)
+    url: https://www.turkiyetoday.com/business/turkish-companies-to-launch-development-projects-in-four-libyan-cities-145116
+  - yayin: Balcanicaucaso
+    baslik: Armenia-Turkey talks advance amid Azerbaijan peace push (Eylül 2025)
+    url: https://www.balcanicaucaso.org/en/cp_article/armenia-turkey-talks-advance-amid-azerbaijan-peace-push/
+  - yayin: Interfax
+    baslik: Türkiye–Ermenistan görüşmeleri (6 Mayıs 2026)
+    url: https://interfax.com/newsroom/top-stories/117448/
+  - yayin: Al-Monitor
+    baslik: "Turkey, Egypt expand military ties: cooperation frameworks (Temmuz 2026)"
+    url: https://www.al-monitor.com/originals/2026/07/turkey-egypt-expand-military-ties-cooperation-frameworks-what-know
+  - yayin: Al-Ahram
+    baslik: Saudi Arabia, Turkey and Pakistan sign a key defense agreement
+    url: https://english.ahram.org.eg/News/574208.aspx
+  - yayin: Al Jazeera
+    baslik: Mecca alliance agrees to activate collective deterrence measures (5 Ekim
+      2026)
+    url: https://www.aljazeera.com/news/2026/10/5/mecca-alliance-agrees-to-activate-collective-deterrence-measures
+  - yayin: Al-Monitor
+    baslik: Iraq bans PKK as security ties with Turkey gain momentum (Mart 2024)
+    url: https://al-monitor.com/originals/2024/03/iraq-bans-pkk-security-ties-turkey-gain-momentum
+  - yayin: Medyascope
+    baslik: "Erdoğan 12 yıl aradan sonra Irak'ta: Kalkınma Yolu anlaşması imzalandı
+      (22 Nisan 2024)"
+    url: https://medyascope.tv/2024/04/22/erdogan-12-yil-aradan-sonra-irakta-kalkinma-yolu-anlasmasi-imzalandi/
 one_cikan: false
 taslak: false
-kaynaklar:
-  - yayin: "Al-Quds (JISS çalışmasının Arapça çevirisi)"
-    baslik: "Is Israel a Regional Power? (Inbar & Assa, JISS, 31 Ağustos 2026)"
-    url: "https://alquds.com/ar/posts/256621-is-israel-a-regional-power"
-  - yayin: "Brookings Institution"
-    baslik: "Turkey's Search for a Middle East Order (Aslı Aydıntaşbaş, 16 Haziran 2026)"
-    url: "https://www.brookings.edu/articles/turkeys-search-for-a-middle-east-order/"
-  - yayin: "Stimson Center"
-    baslik: "Turkey-Israel Rivalry in the New Syria"
-    url: "https://stimson.org/2026/turkey-israel-rivalry-in-the-new-syria/"
-  - yayin: "Shafaq News"
-    baslik: "Ocalan on PKK disarmament anniversary: No Turk without a Kurd"
-    url: "https://shafaq.com/en/Middle-East/Ocalan-on-PKK-disarmament-anniversary-No-Turk-Without-A-Kurd"
-  - yayin: "Medyascope"
-    baslik: "PKK'nın silah yakma töreninin üzerinden bir yıl geçti (11 Temmuz 2026)"
-    url: "https://medyascope.tv/2026/07/11/pkknin-silah-yakma-toreninin-uzerinden-bir-yil-gecti/"
-  - yayin: "Diken"
-    baslik: "Komisyonun kabul ettiği ortak rapor yayınlandı (20 Şubat 2026)"
-    url: "https://www.diken.com.tr/?p=1692963"
-  - yayin: "NTV"
-    baslik: "Çerçeve yasa Resmi Gazete'de. Kurul 24 Ağustos'ta toplanıyor"
-    url: "https://www.ntv.com.tr/turkiye/cerceve-yasa-resmi-gazetede-kurul-24-agustosta-toplaniyor-1737825"
-  - yayin: "Euronews Türkçe"
-    baslik: "PKK'nın fesih sürecini denetleyecek kurul ilk kez toplanıyor (24 Ağustos 2026)"
-    url: "https://tr.euronews.com/2026/08/24/pkknin-fesih-surecini-denetleyecek-kurul-ilk-kez-toplaniyor"
-  - yayin: "İstiklal Gazetesi (Türkiye Gazetesi'ne atıfla)"
-    baslik: "Terörsüz Türkiye'de takvim netleşiyor (12 Ağustos 2026)"
-    url: "https://www.istiklal.com.tr/gundem/terorsuz-turkiyede-takvim-netlesiyor-kritik-esik-icin-tarih-verildi-1101780h"
-  - yayin: "Daily Sabah"
-    baslik: "Turkish intelligence chief meets Libya's Haftar in Benghazi"
-    url: "https://www.dailysabah.com/politics/diplomacy/turkish-intelligence-chief-meets-libyas-haftar-in-benghazi"
-  - yayin: "Defense News"
-    baslik: "Turkish warship's Benghazi port call cements new tack on Libya (26 Ağustos 2025)"
-    url: "https://www.defensenews.com/global/mideast-africa/2025/08/26/turkish-warships-benghazi-port-call-cements-new-tack-on-libya/"
-  - yayin: "Türkiye Today"
-    baslik: "Turkish companies to launch development projects in four Libyan cities (15 Nisan 2025)"
-    url: "https://www.turkiyetoday.com/business/turkish-companies-to-launch-development-projects-in-four-libyan-cities-145116"
-  - yayin: "Balcanicaucaso"
-    baslik: "Armenia-Turkey talks advance amid Azerbaijan peace push (Eylül 2025)"
-    url: "https://www.balcanicaucaso.org/en/cp_article/armenia-turkey-talks-advance-amid-azerbaijan-peace-push/"
-  - yayin: "Interfax"
-    baslik: "Türkiye–Ermenistan görüşmeleri (6 Mayıs 2026)"
-    url: "https://interfax.com/newsroom/top-stories/117448/"
-  - yayin: "Al-Monitor"
-    baslik: "Turkey, Egypt expand military ties: cooperation frameworks (Temmuz 2026)"
-    url: "https://www.al-monitor.com/originals/2026/07/turkey-egypt-expand-military-ties-cooperation-frameworks-what-know"
-  - yayin: "Al-Ahram"
-    baslik: "Saudi Arabia, Turkey and Pakistan sign a key defense agreement"
-    url: "https://english.ahram.org.eg/News/574208.aspx"
-  - yayin: "Al Jazeera"
-    baslik: "Mecca alliance agrees to activate collective deterrence measures (5 Ekim 2026)"
-    url: "https://www.aljazeera.com/news/2026/10/5/mecca-alliance-agrees-to-activate-collective-deterrence-measures"
-  - yayin: "Al-Monitor"
-    baslik: "Iraq bans PKK as security ties with Turkey gain momentum (Mart 2024)"
-    url: "https://al-monitor.com/originals/2024/03/iraq-bans-pkk-security-ties-turkey-gain-momentum"
-  - yayin: "Medyascope"
-    baslik: "Erdoğan 12 yıl aradan sonra Irak'ta: Kalkınma Yolu anlaşması imzalandı (22 Nisan 2024)"
-    url: "https://medyascope.tv/2024/04/22/erdogan-12-yil-aradan-sonra-irakta-kalkinma-yolu-anlasmasi-imzalandi/"
 ---
 
 *Not: Metnin ilk sürümü 8 Eylül 2026'da hazırlandı. Bu sürüm Ekim 2026'da güncellendi; olgular kaynaklarıyla yeniden karşılaştırıldı ve sonradan yaşanan gelişmeler (PKK çerçeve yasası, Mekke Ortak Savunma Anlaşması) eklendi. 2015–2022 dönemine ait tarihsel arka plan (Rusya, Mısır, BAE, Suudi Arabistan) literatürde yaygın biçimde belgelenmiş olaylardır ve bu sürümde ayrıca kaynak gösterilmemiştir.*
