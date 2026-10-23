@@ -1,78 +1,93 @@
 ---
 baslik: "Haftalık Bülten: Dünya Basınında Türkiye (17–24 Ekim 2026)"
-ozet: "Mekke Savunma Anlaşması, Türkiye–Libya deniz yetki alanları mutabakatı, İstanbul'daki İran toplantısı, Karadeniz, Kürt barış süreci ve faiz indirimi: haftanın başlıkları yayın organlarının yönelimleri belirtilerek, yorum katılmadan aktarılıyor."
-tarih: 2026-10-24
+ozet: "Mekke Savunma Anlaşması, Türkiye–Libya deniz yetki alanları mutabakatı,
+  İstanbul'daki İran toplantısı, Karadeniz, Kürt barış süreci ve faiz indirimi:
+  haftanın başlıkları yayın organlarının yönelimleri belirtilerek, yorum
+  katılmadan aktarılıyor."
 kategori: Jeopolitik
+tarih: 2026-10-24
 yazar: NDD Editör
+kaynaklar:
+  - yayin: Al-Monitor (Reuters)
+    baslik: Turkey submits Saudi-Pakistan defence pact to parliament (20 Ekim 2026)
+    url: https://www.al-monitor.com/originals/2026/10/turkey-submits-saudi-pakistan-defence-pact-parliament-ratification-sources-say
+  - yayin: Al-Monitor
+    baslik: Turkey sends Mecca defense pact to parliament (Ezgi Akin, 20 Ekim 2026)
+    url: https://www.al-monitor.com/originals/2026/10/turkey-sends-mecca-defense-pact-saudi-arabia-pakistan-parliament-ratification
+  - yayin: Arab News (Al-Majalla)
+    baslik: "Regional crises and tensions: the view from Ankara (21 Ekim 2026)"
+    url: https://www.arabnews.com/middle-east/regional-crises-and-tensions-the-view-from-ankara-3007477
+  - yayin: Haaretz
+    baslik: Turkey's Erdogan says he will stand by Saudi Arabia amid Houthi attacks
+      (13 Ekim 2026)
+    url: https://www.haaretz.com/middle-east-news/2026-10-13/ty-article/.premium/turkeys-erdogan-says-he-will-stand-by-saudi-arabia-amid-houthi-attacks/000001a1-3554-d217-a5ab-7f5568670000
+  - yayin: Ynet (Reuters)
+    baslik: Turkey provides defensive military support to Saudi Arabia (7 Ekim 2026)
+    url: https://www.ynetnews.com/article/hyp5fomigx
+  - yayin: Times of Israel
+    baslik: Israel condemns Libya's approval of maritime agreement with Turkey (22
+      Ekim 2026)
+    url: https://www.timesofisrael.com/israel-condemns-libyas-approval-of-maritime-agreement-with-turkey/
+  - yayin: Daily News Egypt
+    baslik: Egypt rejects Libyan parliament's ratification of 2019 maritime deal
+      with Türkiye (21 Ekim 2026)
+    url: https://www.dailynewsegypt.com/2026/10/21/egypt-rejects-libyan-parliaments-ratification-of-2019-maritime-deal-with-turkiye/
+  - yayin: Cyprus Mail
+    baslik: All EU member states condemn Turkey-Libya maritime deal as 'null and
+      void' (21 Ekim 2026)
+    url: https://cyprus-mail.com/2026/10/21/all-eu-member-states-condemn-turkey-libya-maritime-deal-as-null-and-void
+  - yayin: Cyprus Mail
+    baslik: "Greece's FM: Turkey-Libya maritime memorandum remains invalid (21 Ekim
+      2026)"
+    url: https://cyprus-mail.com/2026/10/21/turkey-libya-maritime-deal-remains-invalid-greek-foreign-minister-says
+  - yayin: Israel Hayom
+    baslik: Israel, Egypt, Greece furious as US refuses to stand up to Erdogan (22
+      Ekim 2026)
+    url: https://www.israelhayom.com/2026/10/22/israel-egypt-greece-furious-as-us-refuses-to-stand-up-to-erdogan/
+  - yayin: Al Jazeera
+    baslik: What is the Türkiye-Libya maritime deal and why are the EU, Egypt
+      opposed? (22 Ekim 2026)
+    url: https://www.aljazeera.com/news/2026/10/22/what-is-the-turkiye-libya-maritime-deal-and-why-are-the-eu-egypt-opposed
+  - yayin: Al Jazeera
+    baslik: European, Middle East ministers urge US-Iran diplomacy, not new attacks
+      (23 Ekim 2026)
+    url: https://www.aljazeera.com/news/2026/10/23/european-middle-east-ministers-urge-us-iran-diplomacy-not-new-attacks
+  - yayin: Al-Monitor
+    baslik: Turkey says renewed attack on Iran would expand conflict (23 Ekim 2026)
+    url: https://www.al-monitor.com/originals/2026/10/turkey-says-renewed-attack-iran-would-expand-conflict-diplomacy-only-way
+  - yayin: Arab News (Sinem Cengiz)
+    baslik: Türkiye and Azerbaijan are likely to ride out the storm (17 Ekim 2026)
+    url: https://www.arabnews.com/opinion/turkiye-and-azerbaijan-are-likely-to-ride-out-the-storm-3006666
+  - yayin: Al-Monitor (Reuters)
+    baslik: Turkey says Russia, Ukraine increasing attacks in Black Sea ahead of
+      winter (8 Ekim 2026)
+    url: https://www.al-monitor.com/originals/2026/10/turkey-says-russia-ukraine-increasing-attacks-black-sea-ahead-winter
+  - yayin: TASS
+    baslik: "Grushko: Russia in contact with Turkey on Black Sea security (22 Ekim)"
+    url: https://tass.com/politics/2206367
+  - yayin: Rudaw
+    baslik: "Kurtulmuş: peace process law will not be implemented if PKK does not
+      disarm (15 Ekim 2026)"
+    url: https://www.rudaw.net/english/categories/turkey/1079740
+  - yayin: Rudaw
+    baslik: Erdoğan adviser Uçum's remarks and DEM Party reaction (19 Ekim 2026)
+    url: https://rudaw.net/english/categories/turkey/1079800
+  - yayin: Turkish Minute
+    baslik: Turkey cuts interest rate to 36 percent in first reduction in 9 months
+      (22 Ekim 2026)
+    url: https://www.turkishminute.com/2026/10/22/turkey-cuts-interest-rate-to-36-percent-in-first-reduction-in-9-months/amp/
+  - yayin: Turkish Minute
+    baslik: Former Erdoğan aide among 5 more detained in Turkey's fund scandal (22
+      Ekim 2026)
+    url: https://www.turkishminute.com/2026/10/22/former-erdogan-aide-among-5-more-detained-in-turkeys-fund-scandal/
+  - yayin: Al Jazeera
+    baslik: Carney and Erdoğan launch 'strong and resilient' Canada-Türkiye
+      partnership (22 Ekim 2026)
+    url: https://www.aljazeera.com/news/2026/10/22/carney-and-erdogan-launch-strong-and-resilient-canada-turkiye-partnership
 one_cikan: false
 taslak: false
-kaynaklar:
-  - yayin: "Al-Monitor (Reuters)"
-    baslik: "Turkey submits Saudi-Pakistan defence pact to parliament (20 Ekim 2026)"
-    url: "https://www.al-monitor.com/originals/2026/10/turkey-submits-saudi-pakistan-defence-pact-parliament-ratification-sources-say"
-  - yayin: "Al-Monitor"
-    baslik: "Turkey sends Mecca defense pact to parliament (Ezgi Akin, 20 Ekim 2026)"
-    url: "https://www.al-monitor.com/originals/2026/10/turkey-sends-mecca-defense-pact-saudi-arabia-pakistan-parliament-ratification"
-  - yayin: "Arab News (Al-Majalla)"
-    baslik: "Regional crises and tensions: the view from Ankara (21 Ekim 2026)"
-    url: "https://www.arabnews.com/middle-east/regional-crises-and-tensions-the-view-from-ankara-3007477"
-  - yayin: "Haaretz"
-    baslik: "Turkey's Erdogan says he will stand by Saudi Arabia amid Houthi attacks (13 Ekim 2026)"
-    url: "https://www.haaretz.com/middle-east-news/2026-10-13/ty-article/.premium/turkeys-erdogan-says-he-will-stand-by-saudi-arabia-amid-houthi-attacks/000001a1-3554-d217-a5ab-7f5568670000"
-  - yayin: "Ynet (Reuters)"
-    baslik: "Turkey provides defensive military support to Saudi Arabia (7 Ekim 2026)"
-    url: "https://www.ynetnews.com/article/hyp5fomigx"
-  - yayin: "Times of Israel"
-    baslik: "Israel condemns Libya's approval of maritime agreement with Turkey (22 Ekim 2026)"
-    url: "https://www.timesofisrael.com/israel-condemns-libyas-approval-of-maritime-agreement-with-turkey/"
-  - yayin: "Daily News Egypt"
-    baslik: "Egypt rejects Libyan parliament's ratification of 2019 maritime deal with Türkiye (21 Ekim 2026)"
-    url: "https://www.dailynewsegypt.com/2026/10/21/egypt-rejects-libyan-parliaments-ratification-of-2019-maritime-deal-with-turkiye/"
-  - yayin: "Cyprus Mail"
-    baslik: "All EU member states condemn Turkey-Libya maritime deal as 'null and void' (21 Ekim 2026)"
-    url: "https://cyprus-mail.com/2026/10/21/all-eu-member-states-condemn-turkey-libya-maritime-deal-as-null-and-void"
-  - yayin: "Cyprus Mail"
-    baslik: "Greece's FM: Turkey-Libya maritime memorandum remains invalid (21 Ekim 2026)"
-    url: "https://cyprus-mail.com/2026/10/21/turkey-libya-maritime-deal-remains-invalid-greek-foreign-minister-says"
-  - yayin: "Israel Hayom"
-    baslik: "Israel, Egypt, Greece furious as US refuses to stand up to Erdogan (22 Ekim 2026)"
-    url: "https://www.israelhayom.com/2026/10/22/israel-egypt-greece-furious-as-us-refuses-to-stand-up-to-erdogan/"
-  - yayin: "Al Jazeera"
-    baslik: "What is the Türkiye-Libya maritime deal and why are the EU, Egypt opposed? (22 Ekim 2026)"
-    url: "https://www.aljazeera.com/news/2026/10/22/what-is-the-turkiye-libya-maritime-deal-and-why-are-the-eu-egypt-opposed"
-  - yayin: "Al Jazeera"
-    baslik: "European, Middle East ministers urge US-Iran diplomacy, not new attacks (23 Ekim 2026)"
-    url: "https://www.aljazeera.com/news/2026/10/23/european-middle-east-ministers-urge-us-iran-diplomacy-not-new-attacks"
-  - yayin: "Al-Monitor"
-    baslik: "Turkey says renewed attack on Iran would expand conflict (23 Ekim 2026)"
-    url: "https://www.al-monitor.com/originals/2026/10/turkey-says-renewed-attack-iran-would-expand-conflict-diplomacy-only-way"
-  - yayin: "Arab News (Sinem Cengiz)"
-    baslik: "Türkiye and Azerbaijan are likely to ride out the storm (17 Ekim 2026)"
-    url: "https://www.arabnews.com/opinion/turkiye-and-azerbaijan-are-likely-to-ride-out-the-storm-3006666"
-  - yayin: "Al-Monitor (Reuters)"
-    baslik: "Turkey says Russia, Ukraine increasing attacks in Black Sea ahead of winter (8 Ekim 2026)"
-    url: "https://www.al-monitor.com/originals/2026/10/turkey-says-russia-ukraine-increasing-attacks-black-sea-ahead-winter"
-  - yayin: "TASS"
-    baslik: "Grushko: Russia in contact with Turkey on Black Sea security (22 Ekim)"
-    url: "https://tass.com/politics/2206367"
-  - yayin: "Rudaw"
-    baslik: "Kurtulmuş: peace process law will not be implemented if PKK does not disarm (15 Ekim 2026)"
-    url: "https://www.rudaw.net/english/categories/turkey/1079740"
-  - yayin: "Rudaw"
-    baslik: "Erdoğan adviser Uçum's remarks and DEM Party reaction (19 Ekim 2026)"
-    url: "https://rudaw.net/english/categories/turkey/1079800"
-  - yayin: "Turkish Minute"
-    baslik: "Turkey cuts interest rate to 36 percent in first reduction in 9 months (22 Ekim 2026)"
-    url: "https://www.turkishminute.com/2026/10/22/turkey-cuts-interest-rate-to-36-percent-in-first-reduction-in-9-months/amp/"
-  - yayin: "Turkish Minute"
-    baslik: "Former Erdoğan aide among 5 more detained in Turkey's fund scandal (22 Ekim 2026)"
-    url: "https://www.turkishminute.com/2026/10/22/former-erdogan-aide-among-5-more-detained-in-turkeys-fund-scandal/"
-  - yayin: "Al Jazeera"
-    baslik: "Carney and Erdoğan launch 'strong and resilient' Canada-Türkiye partnership (22 Ekim 2026)"
-    url: "https://www.aljazeera.com/news/2026/10/22/carney-and-erdogan-launch-strong-and-resilient-canada-turkiye-partnership"
 ---
 
-**Bu bülten nasıl hazırlandı?** Aşağıda yalnızca yayın organlarının ne yazdığı aktarılıyor; NDD'nin yorumu yoktur. Her başlıkta yayının adı, kısa bir yönelim notu ve tarihi verilir. Yönelim notları yayınların sahiplik/yayın çizgisine ilişkin genel kabul gören tanımlardır. Haftanın kapsamı 17–24 Ekim 2026'dır; bağlam için önceki günlerden gelen birkaç haber tarihi belirtilerek eklenmiştir.
 
 ## 1. Mekke Ortak Savunma Anlaşması (Suudi Arabistan–Türkiye–Pakistan)
 
